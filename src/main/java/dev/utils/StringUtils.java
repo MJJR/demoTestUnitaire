@@ -11,9 +11,9 @@ public final class StringUtils {
 	 *            chaine 2
 	 * @return distance
 	 */
-	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) throws NullPointerException {
+	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) throws StringUtilsException {
 		if (lhs == null || rhs == null)
-			throw new NullPointerException("Au moins un des variables d'entrées est nulle /!\\ ");
+			throw new StringUtilsException("Au moins un des variables d'entrées est nulle /!\\ ");
 		else {
 			int len0 = lhs.length() + 1;
 			int len1 = rhs.length() + 1;
